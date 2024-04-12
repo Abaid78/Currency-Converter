@@ -20,7 +20,7 @@ This is a simple currency converter web application that allows users to convert
 ## API Used:
 Currency Conversion and Exchange Rates API (https://rapidapi.com/developer/docs)
 ## Demo
-[Add a link to your live demo or GitHub Pages here]
+https://abaid78.github.io/Currency-Converter/
 
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request on GitHub.
