@@ -1,0 +1,47 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input {
+    width: 54%;
+    height: 25px;
+    margin: 20px;
+    box-shadow: rgb(226, 247, 243) 1px 1px 2px 2px;
+    border: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 60vw;
+  height: 35vh;
+ border: 2px solid;
+}
+.btn{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.btn button:hover{
+  cursor: pointer;
+}
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  padding: 4px;
+  box-shadow: rgb(67 38 38) 1px 1px 2px 2px;
+}
+.from h1, .to h1{
+    font-size: 1em;
+}
+.result h1{
+  font-size: 1em;
+}
