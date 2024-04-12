@@ -46,13 +46,13 @@ const requestOptions = {
   },
 };
 
-// Function to fetch currency conversion data from API
+// Function to fetch currency conversion data from API and append 
 async function fetchData() {
   const apiUrl = `https://currency-conversion-and-exchange-rates.p.rapidapi.com/convert?from=${fromCurrencySelect.value}&to=${toCurrencySelect.value}&amount=${totalAmountInput.value}`;
   const response = await fetch(apiUrl, requestOptions);
   const responseData = await response.json();
   if (responseData.success) {
-    resultHeading.innerText = responseData.result;
+    resultHeading.innerText = `Currency Rate is :${responseData.rate} and Amount is :${responseData.result}`;
   } else {
     resultHeading.innerText = responseData.error.type;
   }
