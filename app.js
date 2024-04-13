@@ -52,7 +52,7 @@ async function fetchData() {
   const response = await fetch(apiUrl, requestOptions);
   const responseData = await response.json();
   if (responseData.success) {
-    resultHeading.innerText = `Currency Rate is :${responseData.rate} and Amount is :${responseData.result}`;
+    resultHeading.innerText = `Conversion  Rate is :${responseData.info.rate} and Amount is :${responseData.result}`;
   } else {
     resultHeading.innerText = responseData.error.type;
   }
